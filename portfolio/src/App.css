@@ -23,11 +23,35 @@ body {
 
 button{
   
-  width: 13%;
+  color: #222;
+  background-color: rgba(255, 228, 196, 0.616);
+  text-decoration: none;
+  width: 20%;
   border-radius: 30px;
   font-family:Montserrat, Helvetica, sans-serif;
-  
 
+}
+#CV{
+  color: #222;
+  background-color: rgba(255, 228, 196, 0.616);
+  text-decoration: none;
+  width: 30%;
+  border-radius: 30px;
+  font-family:Montserrat, Helvetica, sans-serif;
+
+}
+textarea{
+
+  width: 30%;
+  height: 120px;
+  border-radius: 10px;
+}
+
+input{
+
+  margin-right: 8%;
+  height: 16px;
+  border-radius: 10px;
 }
 
 
@@ -98,7 +122,10 @@ p:nth-child(2) span::after {
   }
 }
 
-
+.PP{
+  width: 30%;
+  border-radius: 47%;
+}
 .header{
 
   display: flex;
@@ -130,7 +157,11 @@ opacity: 10%;
   font-family:  Montserrat, Helvetica, sans-serif;
   font-size: 70%;
 }
-
+.container1{
+  box-shadow: none;
+  background: #f8bda77c;
+  
+}
 .About{
 
   width: 200%;
@@ -188,17 +219,15 @@ opacity: 10%;
   margin-left: 7%;
 }
 
-
-element.style {
+.charlie{
   width: 300px;
   padding: 30px;
   margin: 10px;
-  background: #f8bda77c;
-  border-radius: 4px;
-  color: rgb(54, 73, 98);
+  background: #f1876052;
+  border-radius: 7px;
   font-size: 16px;
   line-height: 1.6;
-  box-shadow: rgb(20 26 40 / 20%) 5px 5.07775px 42px;
+  box-shadow: none;
   will-change: transform;
   transform: perspective(1000px) rotateX(4.12deg) rotateY(7.5deg) scale3d(1, 1, 1);
 }
@@ -209,9 +238,9 @@ element.style {
   }
 
   .containerAbout{
-
-
     margin-left: 8%;
+    box-shadow:#96553b;
+    
   }
 
   .containerWork{
@@ -225,7 +254,9 @@ element.style {
 
   }
   .containerContact{
-    margin-left: 30%;
+    width: 17%;
+    height: 17%;
+    margin-left: 25%;
 
   }
 

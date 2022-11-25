@@ -1,8 +1,8 @@
 import './App.css';
-import { SafeAreaView, StyleSheet, text } from "react";
 import { Button, Link } from 'react-scroll';
 import React from 'react';
 import Tilte from 'react-vanilla-tilt';
+import Pdf from './cv.pdf';
 
 
 function App() {
@@ -65,9 +65,10 @@ function App() {
       </div>
 
       <div className="containerAbout">
-        <Tilte className='vanilla'>
+        <div className='charlie' data-tilt>
           <div className="About" data-tilt>
             <strong>About me</strong><br></br>
+            <img src='pp.JPG' className='PP' width='10%'></img><br></br>
             <p2 className="p2">
               Hello! my name is Nathan,<br></br>
               I’m 22 years old and I’m originally from Paris.<br></br>
@@ -86,13 +87,14 @@ function App() {
             <img alt='logoreact' src='logoreact.png' width='9%' />
             <img className='logonode' alt='logonode.png' src='logonode.png' width='11%' />
           </div>
-
-        </Tilte>
+        </div>
       </div>
 
 
+
+
       <div className="containerExperiences">
-        <Tilte className='vanilla'>
+        <div className='charlie' data-tilt>
           <div className="Experiences" data-tilt>
             <strong>Experiences</strong><br></br>
             <p1>(2015-2017). I made a CAP in pastry making over two years.<br></br>
@@ -103,20 +105,18 @@ function App() {
               (2020).Order picker.<br></br>
               (2020).Creator of companies in the field of E-commerce.<br></br>
               (2022).Competition to integrate the school of Epitech, training in web development.<br></br></p1><br></br>
-            <button>Download my CV</button><br></br><br></br>
+              <a href = {Pdf} target = "_blank" id='CV'>Download my CV</a><br></br><br></br>
 
           </div>
-        </Tilte>
-
+        </div>
       </div>
 
-      <div className='containerWork'>
-
-        <Tilte>
+      <div className='containerWork' >
+        <div className='charlie' data-tilt>
           <div className="Work">
             <strong>Work</strong><br></br><br></br>
             <p1>MY_IRC</p1><br></br>
-            <img alt='my_irc' src='my-irc.png' width='50%' /><br></br>
+            <img alt='my_irc' src='my-irc.png' width='50%' /><br></br><br></br>
             <p1>Here is a project i did with a classmate.<br></br>
               The user can send messages,
               create new channels,
@@ -130,9 +130,8 @@ function App() {
               the tasks in the following ways.  <br></br>
             </p1>
 
-
             <p1>POWER4</p1><br></br><br></br>
-            <img alt='puissance4' src='puissance4.png' width='50%' /><br></br>
+            <img alt='puissance4' src='puissance4.png' width='50%' /><br></br><br></br>
             <p1>This project was completed in
               two weeks and individually. <br></br>
               The goal of this project is to
@@ -140,25 +139,31 @@ function App() {
 
             </p1>
           </div>
-        </Tilte>
 
+        </div>
       </div>
-
-
-
 
 
       <div className='containerContact'>
         <Tilte>
-          <form className='Contact'>
+
+        <form className='Contact'>
             <br></br>
             <strong> Write to me !</strong><br></br>
-            <br></br>Name:<input type={text}></input><br></br>
-            <br></br>E-mail:<input type={text}></input><br></br>
+            <br></br>Name: <input type="text"></input><br></br>
+            <br></br>E-mail: <input type="text"></input><br></br>
             <br></br><br></br><textarea width='20%'></textarea><br></br>
             <button width="30%"><a href="mailto:nathan_gerard@icloud.com?body=My custom mail body">Send your message</a></button><br></br><br></br>
           </form>
+
         </Tilte>
+          
+
+       
+
+
+
+
 
       </div>
 
