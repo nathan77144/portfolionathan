@@ -105,7 +105,7 @@ function App() {
               (2020).Order picker.<br></br>
               (2020).Creator of companies in the field of E-commerce.<br></br>
               (2022).Competition to integrate the school of Epitech, training in web development.<br></br></p1><br></br>
-              <a href = {Pdf} target = "_blank" id='CV'>Download my CV</a><br></br><br></br>
+            <a href={Pdf} target="_blank" id='CV'>Download my CV</a><br></br><br></br>
 
           </div>
         </div>
@@ -116,7 +116,16 @@ function App() {
           <div className="Work">
             <strong>Work</strong><br></br><br></br>
             <p1>MY_IRC</p1><br></br>
-            <img alt='my_irc' src='my-irc.png' width='50%' /><br></br><br></br>
+            <a href="https://github.com/mohammed-el-amine/my_irc" target="_blank" rel="noreferrer">
+              <img
+                width='70%'
+                height='64%'
+                src="my-irc.png"
+                alt="Linkedin"
+              />
+            </a>
+
+            <br></br>
             <p1>Here is a project i did with a classmate.<br></br>
               The user can send messages,
               create new channels,
@@ -128,18 +137,23 @@ function App() {
               of two weeks
               in which we distributed
               the tasks in the following ways.  <br></br>
-            </p1>
+            </p1><br></br>
 
-            <p1>POWER4</p1><br></br><br></br>
-            <img alt='puissance4' src='puissance4.png' width='50%' /><br></br><br></br>
+            <p1>POWER4</p1><br></br>
+            <a href="https://github.com/EpitechWebAcademiePromo2023/W-JSC-501-PAR-1-2-puissance4-nathan.gerard" target="_blank" rel="noreferrer">
+              <img
+                width='70%'
+                height='64%'
+                src="puissance4.png"
+                alt="Linkedin"
+              />
+            </a><br></br>
             <p1>This project was completed in
               two weeks and individually. <br></br>
               The goal of this project is to
               reproduce the game of power4.<br></br>
-
             </p1>
           </div>
-
         </div>
       </div>
 
@@ -147,19 +161,22 @@ function App() {
       <div className='containerContact'>
         <Tilte>
 
-        <form className='Contact'>
+        <div className='charlie' className='Contact'>
             <br></br>
             <strong> Write to me !</strong><br></br>
             <br></br>Name: <input type="text"></input><br></br>
             <br></br>E-mail: <input type="text"></input><br></br>
             <br></br><br></br><textarea width='20%'></textarea><br></br>
             <button width="30%"><a href="mailto:nathan_gerard@icloud.com?body=My custom mail body">Send your message</a></button><br></br><br></br>
-          </form>
+          </div>
+
+
+         
 
         </Tilte>
-          
 
-       
+
+
 
 
 
